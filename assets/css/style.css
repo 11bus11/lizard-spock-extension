@@ -22,7 +22,7 @@ body {
 header {
     grid-area: hd;
     background-color: aqua;
-    height: 8vh;
+    height: 12vh;
     margin-bottom: 0%;
     font-family: 'Orbitron', sans-serif;
     text-align: left;
@@ -65,5 +65,31 @@ footer {
 
 .choices {
     display: inline-block;
+    margin-top: 25vh;
+    text-align: center;
+    width: 10vh;
+    margin-left: 10vh;
+    margin-left: 10vh;
+}
 
+h2 {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#comp-point {
+    margin-left: 10vh;
+}
+
+#you-point {
+    margin-left: 10vh;
+}
+
+#point-count {
+    margin-top: 5vh;
+}
+
+h1 {
+    margin-top: 7vh;
+    padding-top: 0%;
 }

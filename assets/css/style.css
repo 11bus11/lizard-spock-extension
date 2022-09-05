@@ -1,13 +1,13 @@
 .grid-container {
     display: grid;
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
     margin: auto;
     gap: 0px;
     grid-template-columns: 20fr 20fr 15fr;
     grid-template-rows: 20%;
     grid-template-areas:
-    'hd hd ft'
+    'm m hd'
     'm m ft'
     'm m ft'
 }
@@ -16,22 +16,22 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0;
-    background-color: #000000;
+    background-color: #414963;
 }
 
 header {
     grid-area: hd;
     background-color: aqua;
-    height: 20vh;
+    height: 8vh;
+    margin-bottom: 0%;
     font-family: 'Orbitron', sans-serif;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
     background-color: #414963;
 }
 
 main {
     grid-area: m;
-    background-color: blueviolet;
     font-family: 'Orbitron', sans-serif;
     color: #FFFFFF;
     background-color: #414963;
@@ -46,7 +46,24 @@ footer {
     background-color: #414963;
 }
 
+#playing-field {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-top: 7vh;
+    margin-left: 8vw;
+    margin-bottom: 30px;
+    height: 85vh;
+    width: 120vh;
+    border-radius: 7%;
+    border: lightblue;
+    border-width: 5px;
+    border-style: solid;
+    z-index: 1;
+
+}
+
 .choices {
     display: inline-block;
-    
+
 }

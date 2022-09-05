@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0;
+    background-color: #000000;
 }
 
 header {
@@ -24,17 +25,28 @@ header {
     height: 20vh;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #414963;
 }
 
 main {
     grid-area: m;
     background-color: blueviolet;
-    
     font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    background-color: #414963;
 }
+    
 
 footer {
     grid-area: ft;
     background-color: antiquewhite;
     font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    background-color: #414963;
+}
+
+.choices {
+    display: inline-block;
+    
 }

@@ -157,7 +157,7 @@ a {
     }
 }
 
-@media screen and (max-width: 6000px) {
+@media screen and (max-width: 600px) {
     .grid-container{
         display: grid;
         height: 98vh;

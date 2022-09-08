@@ -1,1 +1,3 @@
-console.log("hello");
+function chosen(){
+    let compChoice = 
+}

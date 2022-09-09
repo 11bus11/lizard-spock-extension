@@ -28,8 +28,15 @@ h2 {
     margin-top: 5vh;
 }
 
-.game-link {
+button {
+    justify-items: center;
     text-align: center;
-    font-size: 3vh;
+    font-size: 4vh;
     color: #FFFFFF;
+    background-color: #000000;
+    border-style: hidden;
+    font-family: 'Orbitron', sans-serif;
 }
+
+
+

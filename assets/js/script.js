@@ -1,8 +1,8 @@
-var pointChoice =  0;
+var pointChoice = 0;
 
-let threePoint = document.getElementById("3-point");
-let fivePoint = document.getElementById("5-point");
-let tenPoint = document.getElementById("10-point");
+var threePoint = document.getElementById("3-point");
+var fivePoint = document.getElementById("5-point");
+var tenPoint = document.getElementById("10-point");
 
 threePoint.addEventListener("click", function() {
     pointChoice = 3;
@@ -16,3 +16,5 @@ tenPoint.addEventListener("click", function() {
     pointChoice = 10;
     console.log(pointChoice);
 });
+
+console.log(pointChoice);

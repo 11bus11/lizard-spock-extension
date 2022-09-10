@@ -8,6 +8,7 @@ header {
 }
 main {
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
 
 }
 
@@ -36,7 +37,23 @@ button {
     background-color: #000000;
     border-style: hidden;
     font-family: 'Orbitron', sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 10%;
 }
 
+button:hover {
+    cursor: pointer;
+    font-size: 4.2vh;
+}
 
+#start-game {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 6vh;
+}
+
+#start-game:hover {
+    font-size: 6.5vh;
+}
 

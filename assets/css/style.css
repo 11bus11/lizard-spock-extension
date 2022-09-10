@@ -140,6 +140,11 @@ a {
         cursor: pointer;
     }
 
+#who-won {
+    text-align: center;
+    color: #FFFFFF;
+}
+
 #choose-again {
     font-family: 'Orbitron', sans-serif;
     font-size: 3vh;

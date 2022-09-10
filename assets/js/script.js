@@ -61,56 +61,26 @@ let roundAnouncement = document.getElementById("who-won");
 let compChoice = "scissors";
 
 function isWinner(youChoice) {
-    if (youChoice.beats2 != choiceObjects[randomNumber].name){
-        console.log("lose");
-    } else{
-        console.log("win");
+    compChoice = (choiceObjects[randomNumber]);
+    switch (compChoice.name) {
+        case youChoice.beats2:
+            roundAnouncement.innerHTML = "YOU WON";
+            break;
+        case youChoice.beats1:
+            roundAnouncement.innerHTML = "YOU WON";
+            break;
+        default:
+            roundAnouncement.innerHTML = "YOU LOST";
     }
 }
 
 function playGame(clicked) {
     compChoiceRandom();
-    switch (clicked) {
-        case choiceObjects[0]:
-            if (randomNumber == 0) {
-                roundAnouncement.innerHTML = "Tied"
-                console.log(randomNumber)
-            } else {
-                isWinner(choiceObjects[0]);
-                console.log("not tied", randomNumber);
-            }
-            break;
-        case choiceObjects[1]:
-            if (compChoice == 1) {
-                roundAnouncement.innerHTML = "Tied"
-                console.log("tied")
-            } else {
-                console.log("not tied");
-            }
-            break;
-        case choiceObjects[2]:
-            if (compChoice == 2) {
-                roundAnouncement.innerHTML = "Tied"
-            } else {
-                console.log("not tied");
-            }
-            break;
-        case choiceObjects[3]:
-            if (compChoice == 3) {
-                roundAnouncement.innerHTML = "Tied"
-            } else {
-                console.log("not tied");
-            }
-            break;
-        case choiceObjects[4]:
-            if (compChoice == 4) {
-                roundAnouncement.innerHTML = "Tied"
-            } else {
-                console.log("not tied");
-            }
-            break;
-                
-            
+    document.getElementById("choice-display").innerHTML = `YOU (${clicked.name}) vs. COMPUTER (${choiceObjects[randomNumber].name})`;
+    if (choiceObjects[randomNumber] == clicked) {
+        roundAnouncement.innerHTML = "TIED";
+    } else {
+        isWinner(choiceObjects[0]);
     }
 
     compChoiceRandom();

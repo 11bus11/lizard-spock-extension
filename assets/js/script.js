@@ -30,5 +30,29 @@ const choiceObjects = [
     {
         name: "paper",
         beats: ["rock", "spock"]
+    },
+    {
+        name: "scissors",
+        beats: ["paper", "lizard"]
+    },
+    {
+        name: "lizard",
+        beats: ["spock", "paper"]
+    },
+    {
+        name: "spock",
+        beats: ["scissors", "rock"]
     }
 ];
+
+let randomNumber = 0;
+function compChoiceRandom () {
+    randomNumber = Math.floor(Math.random() * 5);
+    console.log(randomNumber)
+}
+
+function playGame(clicked) {
+    compChoiceRandom();
+
+    console.log(clicked)
+}

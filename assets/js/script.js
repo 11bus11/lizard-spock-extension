@@ -25,50 +25,89 @@ function choosePointAmount() {
 const choiceObjects = [
     {
         name: "rock",
-        beats: ["scissors", "lizard"]
+        beats1: "scissors", 
+        beats2:"lizard",
     },
     {
         name: "paper",
-        beats: ["rock", "spock"]
+        beats1: "rock", 
+        beats2:"spock"
     },
     {
         name: "scissors",
-        beats: ["paper", "lizard"]
+        beats1: "paper", 
+        beats2: "lizard",
     },
     {
         name: "lizard",
-        beats: ["spock", "paper"]
+        beats1: "spock", 
+        beats2: "paper",
     },
     {
         name: "spock",
-        beats: ["scissors", "rock"]
+        beats1: "scissors", 
+        beats2: "rock",
     }
 ];
 
 let randomNumber = 0;
 
-function compChoiceRandom () {
+function compChoiceRandom() {
     randomNumber = Math.floor(Math.random() * 5);
 }
 
-let youChoice = "void"
+
+let roundAnouncement = document.getElementById("who-won");
+let compChoice = "scissors";
+
+function isWinner(youChoice) {
+    if (youChoice.beats2 != choiceObjects[randomNumber].name){
+        console.log("lose");
+    } else{
+        console.log("win");
+    }
+}
 
 function playGame(clicked) {
+    compChoiceRandom();
     switch (clicked) {
         case choiceObjects[0]:
-            console.log("rock");
+            if (randomNumber == 0) {
+                roundAnouncement.innerHTML = "Tied"
+                console.log(randomNumber)
+            } else {
+                isWinner(choiceObjects[0]);
+                console.log("not tied", randomNumber);
+            }
             break;
         case choiceObjects[1]:
-            console.log("paper");
+            if (compChoice == 1) {
+                roundAnouncement.innerHTML = "Tied"
+                console.log("tied")
+            } else {
+                console.log("not tied");
+            }
             break;
         case choiceObjects[2]:
-            console.log("scissors");
+            if (compChoice == 2) {
+                roundAnouncement.innerHTML = "Tied"
+            } else {
+                console.log("not tied");
+            }
             break;
         case choiceObjects[3]:
-            console.log("lizard");
+            if (compChoice == 3) {
+                roundAnouncement.innerHTML = "Tied"
+            } else {
+                console.log("not tied");
+            }
             break;
         case choiceObjects[4]:
-            console.log("spock");
+            if (compChoice == 4) {
+                roundAnouncement.innerHTML = "Tied"
+            } else {
+                console.log("not tied");
+            }
             break;
                 
             

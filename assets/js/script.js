@@ -17,7 +17,6 @@ function choosePointAmount() {
         pointChoice = 10;
         console.log(pointChoice);
     });
-    return pointChoice;
 };
 
 
@@ -50,12 +49,8 @@ const choiceObjects = [
     }
 ];
 
+
 let randomNumber = 0;
-
-function compChoiceRandom() {
-    randomNumber = Math.floor(Math.random() * 5);
-}
-
 let compPoints = 0;
 let youPoints = 0;
 let compPointsElement = document.getElementById("comp-point");
@@ -63,6 +58,10 @@ let youPointsElement = document.getElementById("you-point");
 let roundAnouncement = document.getElementById("who-won");
 let compChoice = "scissors";
 var statusGame = 0;
+
+function compChoiceRandom() {
+    randomNumber = Math.floor(Math.random() * 5);
+}
 
 function isWinner(youChoice) {
     compChoice = (choiceObjects[randomNumber]);
@@ -78,9 +77,10 @@ function isWinner(youChoice) {
         default:
             roundAnouncement.innerHTML = "COMPUTERS POINT";
             compPoints = compPoints + 1;
-    }
+            break;
+    };
     console.log(compChoice.name, youChoice.beats1, youChoice.beats2);
-}
+};
 
 function playGame(clicked) {
     if (statusGame == 0) {
@@ -94,7 +94,28 @@ function playGame(clicked) {
         statusGame = 1;
     } else {
         window.alert("already chosen");
-    }
+    };
     compPointsElement.innerHTML = `Computer points: ${compPoints}`;
     youPointsElement.innerHTML = `Your points: ${youPoints}`;
-}
+};
+
+function restore(goalWin) {
+    if (goalWin == 0) {
+        pointChoice = 3;
+    };
+    console.log(pointChoice);
+    console.log(youPoints);
+    console.log(compPoints);
+    switch (goalWin) {
+        case youPoints:
+            console.log("done,you");
+            break;
+        case compPoints:
+            console.log("done,comp");
+            break;
+        default:
+            console.log ("continue");
+            break;
+    };
+    statusGame = 0;
+};

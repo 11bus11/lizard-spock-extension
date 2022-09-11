@@ -145,7 +145,7 @@ a {
     color: #FFFFFF;
 }
 
-#choose-again {
+#continue {
     font-family: 'Orbitron', sans-serif;
     font-size: 3vh;
     color: #FFFFFF;
@@ -156,9 +156,10 @@ a {
     border-radius: 12%;
     border-style: none;
     text-align: center;
+    margin-left: 40%;
 }
 
-#choose-again:hover {
+#continue:hover {
     cursor: pointer;
 }
 

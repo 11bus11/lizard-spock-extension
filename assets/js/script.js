@@ -109,13 +109,19 @@ function restore(goalWin) {
     switch (goalWin) {
         case youPoints:
             console.log("done,you");
+            compPointsElement.innerHTML = `Computer points: ${compPoints}`;
+            youPointsElement.innerHTML = `Your points: ${youPoints}`;
             break;
         case compPoints:
             console.log("done,comp");
+            compPointsElement.innerHTML = `Computer points: ${compPoints}`;
+            youPointsElement.innerHTML = `Your points: ${youPoints}`;
             break;
         default:
             console.log ("continue");
             break;
     };
+    roundAnouncement.innerHTML = "RESULT";
+    document.getElementById("choice-display").innerHTML = `YOU vs. COMPUTER`;
     statusGame = 0;
 };

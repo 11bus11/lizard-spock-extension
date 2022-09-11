@@ -163,6 +163,21 @@ a {
     cursor: pointer;
 }
 
+#choice-point-display {
+    position: fixed;
+    z-index: 3;
+    background-color: #000000;
+    top: 20%;
+    margin-left: 15vw;
+    width: fit-content;
+    height: 60vh;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+
 @media screen and (max-width: 1300px) {
     h1 {
         font-size: 3vh;

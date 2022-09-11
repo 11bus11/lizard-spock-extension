@@ -41,7 +41,17 @@
             </div>
             <h3 id="choice-display">YOU vs. COMPUTER</h3>
             <p id="who-won">RESULT</p>
-            <button id="continue" onclick="restore(pointChoice)">Continue!</button>
+            <button id="continue" onclick="endRound()">Continue!</button>
+        </div>
+        <div id="choice-point-display">
+            <h2>How many points will be needed to win?</h2>
+            <h2>Choose one option:</h2>
+            <div id="choice-point-wrapper">
+                <button id="3-point" onclick="choosePointAmount(threePoint)">3 points</button>
+                <button id="5-point" onclick="choosePointAmount(fivePoint)">5 points</button>
+                <button id="10-point" onclick="choosePointAmount(tenPoint)">10 points</button> 
+            </div>
+            <button id="continue" onclick="zIndexChange()">Continue!</button>
         </div>
     </main>
     <footer>
@@ -67,6 +77,9 @@
             - Rock crushes Scissors</p> <br>
     </footer>
 </div>
+
+    <a href="game.html" id="start-game" onclick="checkingPointChoice()">START GAME</a>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>

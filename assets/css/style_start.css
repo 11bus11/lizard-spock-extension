@@ -2,9 +2,6 @@ body {
     background-color: #000000;
 }
 
-header {
-    font-family: 'Orbitron', sans-serif;
-
 }
 main {
     font-family: 'Orbitron', sans-serif;
@@ -47,7 +44,7 @@ button:hover {
     font-size: 4.2vh;
 }
 
-#start-game {
+#start-game, #play-again {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 6vh;
@@ -55,5 +52,9 @@ button:hover {
 
 #start-game:hover {
     font-size: 6.5vh;
+}
+
+#play-again {
+
 }
 

@@ -1,23 +1,8 @@
 var pointChoice = 0;
-
-function choosePointAmount() {
-    const threePoint = document.getElementById("3-point");
-    const fivePoint = document.getElementById("5-point");
-    const tenPoint = document.getElementById("10-point");
-
-    threePoint.addEventListener("click", function() {
-        pointChoice = 3;
-        console.log(pointChoice);
-    });
-    fivePoint.addEventListener("click", function() {
-        pointChoice = 5;
-        console.log(pointChoice);
-    });
-    tenPoint.addEventListener("click", function() {
-        pointChoice = 10;
-        console.log(pointChoice);
-    });
-};
+const threePoint = 3;
+const fivePoint = 5;
+const tenPoint = 10;
+let choice = 0;
 
 
 
@@ -59,6 +44,21 @@ let roundAnouncement = document.getElementById("who-won");
 let compChoice = "scissors";
 var statusGame = 0;
 
+function zIndexChange() {
+    document.getElementById("choice-point-display").style.zIndex = -3;
+}
+
+function choosePointAmount(chosenElement) {
+    pointChoice = chosenElement;
+    console.log(pointChoice);
+};
+
+function checkingPointChoice() {
+    if (pointChoice == 0) {
+        pointChoice = 3;
+    };
+};
+
 function compChoiceRandom() {
     randomNumber = Math.floor(Math.random() * 5);
 }
@@ -99,23 +99,22 @@ function playGame(clicked) {
     youPointsElement.innerHTML = `Your points: ${youPoints}`;
 };
 
-function restore(goalWin) {
-    if (goalWin == 0) {
-        pointChoice = 3;
-    };
+function endGame(winOrLose) {
+    window.open("end.html");
+    document.getElementById("win-or-lose").innerHTML = winOrLose;
+}
+
+function endRound() {
     console.log(pointChoice);
     console.log(youPoints);
     console.log(compPoints);
-    switch (goalWin) {
+    switch (pointChoice) {
         case youPoints:
             console.log("done,you");
-            compPointsElement.innerHTML = `Computer points: ${compPoints}`;
-            youPointsElement.innerHTML = `Your points: ${youPoints}`;
             break;
         case compPoints:
             console.log("done,comp");
-            compPointsElement.innerHTML = `Computer points: ${compPoints}`;
-            youPointsElement.innerHTML = `Your points: ${youPoints}`;
+            
             break;
         default:
             console.log ("continue");

@@ -72,6 +72,7 @@ function isWinner(youChoice) {
         default:
             roundAnouncement.innerHTML = "YOU LOST";
     }
+    console.log(compChoice.name, youChoice.beats1, youChoice.beats2);
 }
 
 function playGame(clicked) {
@@ -80,7 +81,7 @@ function playGame(clicked) {
     if (choiceObjects[randomNumber] == clicked) {
         roundAnouncement.innerHTML = "TIED";
     } else {
-        isWinner(choiceObjects[0]);
+        isWinner(clicked);
     }
 
     compChoiceRandom();

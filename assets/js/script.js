@@ -56,33 +56,45 @@ function compChoiceRandom() {
     randomNumber = Math.floor(Math.random() * 5);
 }
 
-
+let compPoints = 0;
+let youPoints = 0;
+let compPointsElement = document.getElementById("comp-point");
+let youPointsElement = document.getElementById("you-point");
 let roundAnouncement = document.getElementById("who-won");
 let compChoice = "scissors";
+var statusGame = 0;
 
 function isWinner(youChoice) {
     compChoice = (choiceObjects[randomNumber]);
     switch (compChoice.name) {
         case youChoice.beats2:
-            roundAnouncement.innerHTML = "YOU WON";
+            roundAnouncement.innerHTML = "YOUR POINT";
+            youPoints = youPoints + 1;
             break;
         case youChoice.beats1:
-            roundAnouncement.innerHTML = "YOU WON";
+            roundAnouncement.innerHTML = "YOUR POINT";
+            youPoints = youPoints + 1;
             break;
         default:
-            roundAnouncement.innerHTML = "YOU LOST";
+            roundAnouncement.innerHTML = "COMPUTERS POINT";
+            compPoints = compPoints + 1;
     }
     console.log(compChoice.name, youChoice.beats1, youChoice.beats2);
 }
 
 function playGame(clicked) {
-    compChoiceRandom();
-    document.getElementById("choice-display").innerHTML = `YOU (${clicked.name}) vs. COMPUTER (${choiceObjects[randomNumber].name})`;
-    if (choiceObjects[randomNumber] == clicked) {
-        roundAnouncement.innerHTML = "TIED";
+    if (statusGame == 0) {
+        compChoiceRandom();
+        document.getElementById("choice-display").innerHTML = `YOU (${clicked.name}) vs. COMPUTER (${choiceObjects[randomNumber].name})`;
+        if (choiceObjects[randomNumber] == clicked) {
+            roundAnouncement.innerHTML = "TIED";
+        } else {
+            isWinner(clicked);
+        }
+        statusGame = 1;
     } else {
-        isWinner(clicked);
+        window.alert("already chosen");
     }
-
-    compChoiceRandom();
+    compPointsElement.innerHTML = `Computer points: ${compPoints}`;
+    youPointsElement.innerHTML = `Your points: ${youPoints}`;
 }

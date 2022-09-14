@@ -51,11 +51,11 @@
                 <button id="5-point" class="point-button" onclick="choosePointAmount(fivePoint)">5 points</button>
                 <button id="10-point" class="point-button" onclick="choosePointAmount(tenPoint)">10 points</button> 
             </div>
-            <button id="continue-to-game" onclick="zIndexChange(continueToGame)">Continue!</button>
+            <button id="continue-to-game" onclick="zIndexChange(toGame)">Continue!</button>
         </div>
         <div id="result-game-display">
-            <h1>Result</h1>
-            <button id="new-game" onclick="choosePointAmount(newGame)">3 points</button>
+            <h1 id="who-won-game">Result</h1>
+            <button id="new-game" onclick="zIndexChange(newGame)">3 points</button>
             <p>Game made by Erik Vodopivec Forsman</p>
         </div>
     </main>

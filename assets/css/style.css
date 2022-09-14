@@ -197,7 +197,7 @@ button:hover {
 
 #result-game-display {
     position: fixed;
-    z-index: 4;
+    z-index: -3;
     background-color: #000000;
     top: 7vh;
     margin-left: 5vw;

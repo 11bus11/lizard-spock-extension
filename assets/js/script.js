@@ -38,34 +38,25 @@ let youPoints = 0;
 let compPointsElement = document.getElementById("comp-point");
 let youPointsElement = document.getElementById("you-point");
 let roundAnouncement = document.getElementById("who-won");
+let resultGameDisplay = document.getElementById("result-game-display");
+let choicePointDisplay = document.getElementById("choice-point-display");
+let resultGame = document.getElementById("who-won-game");
 let compChoice = "scissors";
 var statusGame = 0;
 
-function zIndexChange(clickedButton) {
-    switch (clickedButton){
-        case computerWin:
-            break;
-        case youWin:
-            break;
-        case continueToGame:
-            document.getElementById("choice-point-display").style.zIndex = -3;
-            break;
-        case newGame:
-            document.getElementById("result-game-display").style.zIndex = 3;
-            break;
-    }
-    if (clickedButton == continueToGame) {
-        document.getElementById("choice-point-display").style.zIndex = -3;
-    } else {
-        document.getElementById("result-game-display").style.zIndex = 3;
-    }
-    
-};
+const newGame = "new game";
+const toGame = "to game";
+const computerWin = "computer win";
+const youWin = "you win"; 
+
+
 
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
     console.log(pointChoice);
 };
+
+
 
 function checkingPointChoice() {
     if (pointChoice == 0) {
@@ -78,6 +69,7 @@ function compChoiceRandom() {
 }
 
 function isWinner(youChoice) {
+    checkingPointChoice();
     compChoice = (choiceObjects[randomNumber]);
     switch (compChoice.name) {
         case youChoice.beats2:
@@ -138,4 +130,29 @@ function endRound() {
     roundAnouncement.innerHTML = "RESULT";
     document.getElementById("choice-display").innerHTML = `YOU vs. COMPUTER`;
     statusGame = 0;
+};
+function zindexToGame() {
+    console.log("to game")
+    choicePointDisplay.style.zIndex = -3;
+}
+
+function zIndexChange(gameInput) {
+    switch (gameInput) {
+        case computerWin:
+            resultGameDisplay.style.zIndex = 3;
+            resultGame.innerHTML = "You lost!";
+            break;
+        case youWin:
+            resultGameDisplay.style.zIndex = 3;
+            resultGame.innerHTML = "You won!";
+            break;
+        case newGame:
+            resultGameDisplay.style.zIndex = -3;
+            choicePointDisplay.style.zIndex = 3;
+            break;
+        case toGame:
+            console.log("hes")
+            choicePointDisplay.style.zIndex = -3;
+            break;
+    };
 };

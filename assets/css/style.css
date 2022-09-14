@@ -63,7 +63,7 @@ footer {
 
 }
 
-.choices-red, .choices-blue {
+.choices-red {
     display: inline-block;
     margin-top: 25vh;
     text-align: center;
@@ -99,6 +99,16 @@ p {
     font-size: 2.3vh;
 }
 
+ul {
+    font-size: 2.3vh;
+    padding-left: 0;
+    margin-left: 10%;
+}
+li {
+    padding-bottom: 6%;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -121,20 +131,15 @@ a {
 }
 
 .choices-red {
-    width: 14%;
+    padding-right: 5px;
+    padding-left: 5px;
     height: 8%;
     background-color: #ab1010;
     border-radius: 10%;
     border-style: hidden;
+    font-family: 'Orbitron', sans-serif;
 }
 
-.choices-blue {
-    width: 14%;
-    height: 8%;
-    background-color: #2636c5;
-    border-radius: 10%;
-    border-style: hidden;
-}
 
 button:hover {
         cursor: pointer;
@@ -145,7 +150,7 @@ button:hover {
     color: #FFFFFF;
 }
 
-#continue, #continue-to-game {
+#continue, #continue-to-game, #newGame {
     font-family: 'Orbitron', sans-serif;
     font-size: 3vh;
     color: #FFFFFF;
@@ -188,6 +193,20 @@ button:hover {
     margin-bottom: 20%;
     background-color: #ab1010;
     border-radius: 10%;
+}
+
+#result-game-display {
+    position: fixed;
+    z-index: 4;
+    background-color: #000000;
+    top: 7vh;
+    margin-left: 5vw;
+    width: 65vw;
+    height: 85vh;
+    border-radius: 7%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightblue;
 }
 
 

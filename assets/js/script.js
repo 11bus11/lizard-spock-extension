@@ -4,8 +4,6 @@ const fivePoint = 5;
 const tenPoint = 10;
 let choice = 0;
 
-
-
 const choiceObjects = [
     {
         name: "rock",
@@ -34,7 +32,6 @@ const choiceObjects = [
     }
 ];
 
-
 let randomNumber = 0;
 let compPoints = 0;
 let youPoints = 0;
@@ -44,9 +41,26 @@ let roundAnouncement = document.getElementById("who-won");
 let compChoice = "scissors";
 var statusGame = 0;
 
-function zIndexChange() {
-    document.getElementById("choice-point-display").style.zIndex = -3;
-}
+function zIndexChange(clickedButton) {
+    switch (clickedButton){
+        case computerWin:
+            break;
+        case youWin:
+            break;
+        case continueToGame:
+            document.getElementById("choice-point-display").style.zIndex = -3;
+            break;
+        case newGame:
+            document.getElementById("result-game-display").style.zIndex = 3;
+            break;
+    }
+    if (clickedButton == continueToGame) {
+        document.getElementById("choice-point-display").style.zIndex = -3;
+    } else {
+        document.getElementById("result-game-display").style.zIndex = 3;
+    }
+    
+};
 
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
@@ -111,10 +125,11 @@ function endRound() {
     switch (pointChoice) {
         case youPoints:
             console.log("done,you");
+            zIndexChange(youWin);
             break;
         case compPoints:
             console.log("done,comp");
-            
+            zIndexChange(computerWin);
             break;
         default:
             console.log ("continue");

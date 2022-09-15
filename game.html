@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importing the font used in this game-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
@@ -11,17 +12,23 @@
     <title>Rock, paper, sissors, lizard, spock!</title>
 </head>
 <body>
+<!--Grid container-->
 <div class="grid-container">
+    <!--Header with the title of the game-->
     <header>
         <h1>Rock, paper, sissors, lizard, spock!</h1>
     </header>
+    <!--Main with all the content for the game-->
     <main>
+        <!--Playing field where the game is played-->
         <div id="playing-field">
             <h2>Choose your fighter!</h2>
+            <!--Shows point amount-->
             <div id="point-count">
             <p id="comp-point">Computer points: 0</p>
             <p id="you-point">Your points: 0</p>
             </div>
+            <!--All 5 available choices-->
             <div id="choice-wrapper">
                 <button onclick="playGame(choiceObjects[0])" class="choices-red">
                     <h3>Rock</h3>
@@ -39,26 +46,35 @@
                     <h3>Spock</h3>
                 </button>
             </div>
+            <!--Information on choices and result of round-->
             <h3 id="choice-display">YOU vs. COMPUTER</h3>
             <p id="who-won">RESULT</p>
+            <!--Button to end round-->
             <button id="continue" onclick="endRound()">Continue!</button>
         </div>
+        <!--Window for choosing points needed to win-->
         <div id="choice-point-display">
             <h2>How many points will be needed to win?</h2>
             <h2>Choose one option:</h2>
+            <!--The options-->
             <div id="choice-point-wrapper">
                 <button id="3-point" class="point-button" onclick="choosePointAmount(threePoint)">3 points</button>
                 <button id="5-point" class="point-button" onclick="choosePointAmount(fivePoint)">5 points</button>
                 <button id="10-point" class="point-button" onclick="choosePointAmount(tenPoint)">10 points</button> 
             </div>
+            <!--Button that takes you to the playing field-->
             <button id="continue-to-game" onclick="zIndexChange(toGame)">Continue!</button>
         </div>
+        <!--Window showing the result of the game-->
         <div id="result-game-display">
+            <!--The result (who won)-->
             <h1 id="who-won-game">Result</h1>
+            <!--Button for playing new game-->
             <button id="new-game" onclick="zIndexChange(newGame)">3 points</button>
             <p>Game made by Erik Vodopivec Forsman</p>
         </div>
     </main>
+    <!--Footer containing the rules-->
     <footer>
         <h4>Rules</h4>
         <ul>
@@ -75,9 +91,7 @@
         </ul>
     </footer>
 </div>
-
-    <a href="game.html" id="start-game" onclick="checkingPointChoice()">START GAME</a>
-
+<!--Link to JavaScript-->
 <script src="assets/js/script.js"></script>
 </body>
 </html>

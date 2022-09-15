@@ -10,6 +10,10 @@ I want the user to:
 - See scores and choices each round
 
 ### Colour
+I chose a dark blue colour and black for backgrounds. The instruction page has a black background and the page where you play the game has a dark blue one. The "game-window" has a black background with a lightblue border to make it look like a screen inspired by Star Trek TOS (the original series). The buttons are either blue or red. Red is for the different choices and blue is for the rest of the buttons. All text are white.
+![Colours main](assets/media/spock_main_colours.PNG)
+![Colours buttons](assets/media/spock_buttons_colours.PNG)
+
 
 ### Structure and typography
 
@@ -25,11 +29,11 @@ I want the user to:
 
 ### Rules
 
-##Testing
+## Testing
 
 ### User stories
 
-###Device testing
+### Device testing
 
 ### Browser testing
 

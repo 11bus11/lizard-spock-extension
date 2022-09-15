@@ -71,6 +71,15 @@ The user was able to:
 #### Code
 
 #### Contrast and more
+I checked all colours in the [accessibility checker](https://www.accessibilitychecker.org/color-contrast-checker/). Their colour contrast checker tells you if the background and forground (the text) has a large enough contrast. If it does not have enough contrast, it will be very hard for people with bad eyesight to read.
+- Validation for the dark blue background.
+![dark blue background validation](assets/media/dark_blue_contrast.PNG)
+- Validation for the black background.
+![black background validation](assets/media/black_contrast.PNG)
+- Validation for the blue buttons.
+![blue button validation](assets/media/blue_contrast.PNG)
+- Validation for the red buttons.
+![red button validation](assets/media/red_contrast.PNG)
 
 ### Credits
 The rules for the game are copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), and the font (Orbitron, san serif) is from [Google fonts](https://fonts.google.com/specimen/Orbitron?query=orbitron). The layout is inspired by Star Trek TOS by Gene Roddenberry. 

@@ -1,9 +1,10 @@
+//variables choosing points to win round
 var pointChoice = 0;
 const threePoint = 3;
 const fivePoint = 5;
 const tenPoint = 10;
-let choice = 0;
 
+//variable choices (objects) in game
 const choiceObjects = [
     {
         name: "rock",
@@ -32,6 +33,7 @@ const choiceObjects = [
     }
 ];
 
+//variable running game
 let randomNumber = 0;
 let compPoints = 0;
 let youPoints = 0;
@@ -44,30 +46,32 @@ let resultGame = document.getElementById("who-won-game");
 let compChoice = "scissors";
 var statusGame = 0;
 
+//variable button clicks
 const newGame = "new game";
 const toGame = "to game";
 const computerWin = "computer win";
 const youWin = "you win"; 
 
 
-
+//choosing points needed to win
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
     console.log(pointChoice);
-};
+}
 
-
-
+//checking if the user chose a point amount
 function checkingPointChoice() {
     if (pointChoice == 0) {
         pointChoice = 3;
-    };
-};
+    }
+}
 
+//generates a random number between 0 and 4
 function compChoiceRandom() {
     randomNumber = Math.floor(Math.random() * 5);
 }
 
+//checks who the winner of the round is (if is not tie)
 function isWinner(youChoice) {
     checkingPointChoice();
     compChoice = (choiceObjects[randomNumber]);
@@ -84,10 +88,11 @@ function isWinner(youChoice) {
             roundAnouncement.innerHTML = "COMPUTERS POINT";
             compPoints = compPoints + 1;
             break;
-    };
+    }
     console.log(compChoice.name, youChoice.beats1, youChoice.beats2);
-};
+}
 
+//goes thru a round and changes point amounts
 function playGame(clicked) {
     if (statusGame == 0) {
         compChoiceRandom();
@@ -100,16 +105,12 @@ function playGame(clicked) {
         statusGame = 1;
     } else {
         window.alert("already chosen");
-    };
+    }
     compPointsElement.innerHTML = `Computer points: ${compPoints}`;
     youPointsElement.innerHTML = `Your points: ${youPoints}`;
-};
-
-function endGame(winOrLose) {
-    window.open("end.html");
-    document.getElementById("win-or-lose").innerHTML = winOrLose;
 }
 
+//determines if the game is done (won/lost) or will continue
 function endRound() {
     console.log(pointChoice);
     console.log(youPoints);
@@ -126,16 +127,13 @@ function endRound() {
         default:
             console.log ("continue");
             break;
-    };
+    }
     roundAnouncement.innerHTML = "RESULT";
     document.getElementById("choice-display").innerHTML = `YOU vs. COMPUTER`;
     statusGame = 0;
-};
-function zindexToGame() {
-    console.log("to game")
-    choicePointDisplay.style.zIndex = -3;
 }
 
+//changes what window is shown
 function zIndexChange(gameInput) {
     switch (gameInput) {
         case computerWin:
@@ -151,8 +149,7 @@ function zIndexChange(gameInput) {
             choicePointDisplay.style.zIndex = 3;
             break;
         case toGame:
-            console.log("hes")
             choicePointDisplay.style.zIndex = -3;
             break;
-    };
-};
+    }
+}

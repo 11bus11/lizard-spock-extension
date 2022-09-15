@@ -1,4 +1,4 @@
-# Rock, paper, sissors, spock
+# Rock, paper, sissors, lizard, spock
 
 ## UX - User Experience
 
@@ -50,6 +50,15 @@ I would like to add some more choices that the user can make, and I would like t
 ## Testing
 
 ### User stories
+The user was able to:
+- Play an entertaining game
+  - Assuming the user finds a game of rock, paper, sissors, lizard, spock entertaining, they will be entertained by this.
+- Be able to choose how many points are needed to win a round
+  - This is one of the features of the game. You can choose between 3, 5, and 10 points.
+- See the rules at all times
+  - The rules are always there when you play the game.
+- See scores and choices each round
+ - The game shows how many points each player has and what choice each player made each round. It also shows who got the point.
 
 ### Device testing
 

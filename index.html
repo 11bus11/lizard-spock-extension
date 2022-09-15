@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head onload="sessionStorage.clear();">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style_start.css">
-    <title>Rock, paper, scissors, lizard, spock</title>
+    <title>Rock, paper, sissors, lizard, spock</title>
 </head>
 <body>
     <header>
-        <h1>Rock, paper, scissors, lizard, spock</h1>
+        <h1>Rock, paper, sissors, lizard, spock!</h1>
     </header>
     <main>
-        <h2>How many points will be needed to win?</h2>
-        <h2>Choose one option:</h2>
-        <div id="choice-point-wrapper">
-            <button id="3-point" onclick="choosePointAmount(threePoint)">3 points</button>
-            <button id="5-point" onclick="choosePointAmount(fivePoint)">5 points</button>
-            <button id="10-point" onclick="choosePointAmount(tenPoint)">10 points</button> 
-        </div>
-        <a href="game.html" id="start-game" onclick="checkingPointChoice()">START GAME</a>
-</main>
+        <h2>How the game works</h2>
+        <p>
+        Choose how many points you will need to win
+        Then click continue. If you do not make a choice, 
+        the points needed to win will be 3 by default.
+        <br/><br/>
+        On the game page you need to choose an option. 
+        </p>
+    </main>
+
 </body>
 <script src="assets/js/script.js"></script>
 </html>

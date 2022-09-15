@@ -57,6 +57,10 @@ const youWin = "you win";
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
     console.log(pointChoice);
+    compPoints = 0;
+    youPoints = 0;
+    compPointsElement.innerHTML = `Computer points: ${compPoints}`;
+    youPointsElement.innerHTML = `Your points: ${youPoints}`;
 }
 
 //checking if the user chose a point amount

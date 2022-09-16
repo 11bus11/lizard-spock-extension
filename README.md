@@ -1,5 +1,5 @@
 # Rock, paper, sissors, lizard, spock
-This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki]((https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
+This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
 
     Scissors cuts Paper
     Paper covers Rock

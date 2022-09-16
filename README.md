@@ -1,4 +1,18 @@
 # Rock, paper, sissors, lizard, spock
+This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
+
+    Scissors cuts Paper
+    Paper covers Rock
+    Rock crushes Lizard
+    Lizard poisons Spock
+    Spock smashes Scissors
+    Scissors decapitates Lizard
+    Lizard eats Paper
+    Paper disproves Spock
+    Spock vaporizes Rock
+    Rock crushes Scissors
+
+
 
 ## UX - User Experience
 
@@ -18,7 +32,7 @@ I chose a dark blue colour and black for backgrounds. The instruction page has a
 I wanted the game to look a bit like an older game, and be inspired by Star Trek TOS. To accive that I chose a font that looked very retro and tryled the game window like one of the screens in Star Trek. 
 
 #### Structure
-For the layout of the page i chose to create a game window with a border around it. This is how a lot of remakes of older games looks. The window is also shaped with round borders, just like the screens in Star Trek. I chose to have the rules accessable at all times due to this version/extention of the classic "Rock, paper, sissors" game. The only ones who really knows how it works are viewers of The Big Bang Theory. In order to avoid confusion about the result I chose to have the rules easily accessable at all times. On desktop, they are placed to the right of the game window, and on mobile and smaller screens, they are placed below the game window. The starting page was inspired by the starting pages of old 8-, and 16-bit games.
+For the layout of the page i chose to create a game window with a border around it. This is how a lot of remakes of older games looks. The window is also shaped with round corners, just like the screens in Star Trek. I chose to have the rules accessable at all times due to this version/extention of the classic "Rock, paper, sissors" game. The only ones who really knows how it works are viewers of The Big Bang Theory. In order to avoid confusion about the result I chose to have the rules easily accessable at all times. On desktop, they are placed to the right of the game window, and on mobile and smaller screens, they are placed below the game window. The starting page was inspired by the starting pages of old 8-, and 16-bit games.
 ![Inspiration picture game window](assets/media/inspo_image.jpg)
 ![Inspiration picture information page - galaga](assets/media/galaga_starting_page.png)
 ![Inspiration picture information page - mario](assets/media/mario_starting_page.jpg)
@@ -63,6 +77,11 @@ The user was able to:
 ### Device testing
 
 ### Browser testing
+The game was tested on these browsers:
+- Mozilla Firefox
+- Safari
+- Google crome
+- DuckDuckGo mobile browser
 
 ### Peer review
 

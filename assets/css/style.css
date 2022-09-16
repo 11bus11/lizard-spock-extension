@@ -240,6 +240,10 @@ button:hover {
     border-color: lightblue;
 }
 
+img {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1300px) {
     h1 {
         font-size: 3vh;
@@ -269,10 +273,6 @@ button:hover {
         width: 18%;
         height: 10%;
         margin-top: 6vh;
-    }
-
-    img {
-        visibility: hidden;
     }
     
 }
@@ -359,8 +359,19 @@ button:hover {
         height: 8%;
         margin-top: 2vh;
     }
-    img {
-        visibility: visible;
-    }
 
+    #rules-wrapper {
+        z-index: 5;
+    }
+    #up-arrow {
+        visibility: visible;
+        position: fixed;
+        height: 40px;
+        margin-top: 3%;
+        margin-left: 80%;
+        padding-left: 4px;
+        padding-right: 4px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+    }
 }

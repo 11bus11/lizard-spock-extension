@@ -158,6 +158,6 @@ function zIndexChange(gameInput) {
     }
 }
 
-function ruleMargin() {
-    
+function rulesShow() {
+    document.getElementById("rules-wrapper").style.height = 100;
 }

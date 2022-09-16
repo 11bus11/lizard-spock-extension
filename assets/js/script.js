@@ -157,3 +157,7 @@ function zIndexChange(gameInput) {
             break;
     }
 }
+
+function ruleMargin() {
+    
+}

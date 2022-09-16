@@ -66,7 +66,7 @@ function choosePointAmount(chosenElement) {
 //checking if the user chose a point amount
 function checkingPointChoice() {
     if (pointChoice == 0) {
-        pointChoice = 3;
+        window.alert("No option chosen.")
     }
 }
 
@@ -77,7 +77,6 @@ function compChoiceRandom() {
 
 //checks who the winner of the round is (if is not tie)
 function isWinner(youChoice) {
-    checkingPointChoice();
     compChoice = (choiceObjects[randomNumber]);
     switch (compChoice.name) {
         case youChoice.beats2:
@@ -153,7 +152,12 @@ function zIndexChange(gameInput) {
             choicePointDisplay.style.zIndex = 3;
             break;
         case toGame:
-            choicePointDisplay.style.zIndex = -3;
+            if (pointChoice == 0) {
+                window.alert("No option chosen.")
+            } else {
+                choicePointDisplay.style.zIndex = -3;
+            }
+            
             break;
     }
 }

@@ -47,7 +47,7 @@ The game is simple with one starting page and one game page with 3 windows. One 
 This page was made to give the user instructions on how to play the game. In some games, especially older ones, you are not given all instructions on how to play the game. It is a lot of trial and error. Even if i want to give this game a retro feel, this is one of the things i dont want to replicate. An instruction page also keeps the user from getting frustrated and/or annoyed.
 
 ### Point choosing window
-I have chosen to have this game work like when kids play rock, paper, sissors. You play until on of you gets 3 points. But instead of just making the user play to 3, they can choose to play to 3, 5 and 10. This is chosen on this window. If non of the options gets chosen, the game defaults to 3 points to win the game. When you click the blue button you get sent to the game window.
+I have chosen to have this game work like when kids play rock, paper, sissors. You play until on of you gets 3 points. But instead of just making the user play to 3, they can choose to play to 3, 5 and 10. This is chosen on this window. If non of the options gets chosen, an alert, telling you to choose an option, pops up when you click the blue button.
 
 ### Game window
 When the user has chosen the points needed to win, they play the game itself. This is done on this window. When you choose aone of the options you get to know who won the round and the winner gets one point. Then you click continue to play another round. this continues until you or the computer have enough points to win. When that happens the continue button sends you to the result window.
@@ -75,6 +75,21 @@ The user was able to:
  - The game shows how many points each player has and what choice each player made each round. It also shows who got the point.
 
 ### Device testing
+The game has been tested on multiple devices using the mozilla dev tools. These are the devices:
+- iPhone SE (2:nd generation)
+- iPhone 11 (Pro + Pro Max)
+- iPhone 13 (Pro Max + Mini)
+- Samsung Galaxy Note 10
+- Samsung Galaxy S10/S10+
+- Samsung Galaxy S20
+- iPad
+
+The game was also tested (natively) on these devices:
+- iPhone SE (2:nd generation)
+- Samsung Galaxy S9
+- iPad
+- ACER Aspire 5 15 inch (laptop)
+- Desktop computer (Windows 10)
 
 ### Browser testing
 The game was tested on these browsers:
@@ -84,8 +99,11 @@ The game was tested on these browsers:
 - DuckDuckGo mobile browser
 
 ### Peer review
+I asked some people I know to test the game. They found some small issues with the media querries, but did not find much wrong with the game itself.
+One of the people I asked said that they liked the retro style of the game. Another person said it would be nice to get some feedback on how many points are chosen. This was later inplemented.
 
 ### Validator testing
+
 
 #### Code
 

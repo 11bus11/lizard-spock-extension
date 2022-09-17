@@ -59,7 +59,8 @@ This window shows who won and also gives the user the option to start a new game
 The rules are displayed as long as you are on the game.html page. Depending on which device you are on the placement might be a bit different, but the rules are always accessible. This is to avoid confusion, since this game is from a tv-show that not everyone has seen. By always showing the rules I can avoid the user getting confused about why for example spock wins against rock. The information is right there and the user can understand the logic. 
 
 ### Features left to implement
-I would like to add some more choices that the user can make, and I would like to make it possible for the user to play against a friend IRL.
+- I would like to add some more choices that the user can make.
+- And maybe make it possible for the user to play against a friend IRL.
 
 ## Testing
 
@@ -117,6 +118,26 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 ![blue button validation](assets/media/blue_contrast.PNG)
 - Validation for the red buttons.
 ![red button validation](assets/media/red_contrast.PNG)
+
+### Fixed bugs
+- Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so i chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
+- I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
+![Bug rules]
+
+### Unfixed bugs
+
+### Deployment
+This game was deployed to github pages.
+
+- Open the repository setting on.
+- Go to "pages" (found under "code and automation").
+- Choose which branch to build from. You want to choose "main". Do not forget to save the settings.
+- (If needed, choose a custom domain)
+- Open the repository in github desktop (I used github desktop. You can do this in git too.)
+- Choose to create a local clone (the first time you open your repository in github desktop, there should be a window asking if you want to create a clone)
+- Copy the link to your deployed website (can be found in the github pages settings, where you chose which branch to build from) and make sure it is operating as expected.
+- The deployed website will now be updated when you push anything new to the repository.
+
 
 ### Credits
 The rules for the game are copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), and the font (Orbitron, san serif) is from [Google fonts](https://fonts.google.com/specimen/Orbitron?query=orbitron). The layout is inspired by Star Trek TOS by Gene Roddenberry. 

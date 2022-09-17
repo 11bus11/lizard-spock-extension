@@ -43,6 +43,7 @@ let roundAnouncement = document.getElementById("who-won");
 let resultGameDisplay = document.getElementById("result-game-display");
 let choicePointDisplay = document.getElementById("choice-point-display");
 let resultGame = document.getElementById("who-won-game");
+let feedbackPointChoice = document.getElementById("feedback-point-choice");
 let compChoice = "scissors";
 var statusGame = 0;
 
@@ -57,6 +58,7 @@ const youWin = "you win";
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
     console.log(pointChoice);
+    feedbackPointChoice.innerHTML = `Points chosen: ${pointChoice}`;
     compPoints = 0;
     youPoints = 0;
     compPointsElement.innerHTML = `Computer points: ${compPoints}`;

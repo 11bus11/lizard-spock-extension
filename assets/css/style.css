@@ -113,6 +113,7 @@ h4 {
 
 p {
     font-size: 2.3vh;
+    margin-left: 10vh;
 }
 
 ul {
@@ -154,19 +155,11 @@ a {
     border-style: hidden;
 }
 
-#comp-point {
-    margin-left: 10vh;
-}
-
-#you-point {
-    margin-left: 10vh;
-}
-
 #point-count {
     margin-top: 5vh;
 }
 
-#choice-wrapper {
+#choice-wrapper, #choice-point-wrapper {
     margin-left: 10vh;
     margin-right: 10vh;
 }
@@ -232,12 +225,12 @@ button:hover {
     color: #FFFFFF;
     border-style: hidden;
     font-family: 'Orbitron', sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 5%;
     margin-bottom: 20%;
     background-color: #ab1010;
     border-radius: 10%;
 }
+
 
 #result-game-display {
     position: fixed;
@@ -331,7 +324,7 @@ button:hover {
         margin-left: 7vw;
     }
 
-    #choice-wrapper {
+    #choice-wrapper, #choice-point-wrapper {
         margin-left: 3vw;
         margin-right: 3vw
     }

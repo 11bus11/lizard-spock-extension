@@ -120,6 +120,7 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 ![red button validation](assets/media/red_contrast.PNG)
 
 ### Fixed bugs
+- Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so i chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
 ![Bug rules]
 

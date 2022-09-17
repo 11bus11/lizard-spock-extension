@@ -276,7 +276,7 @@ button:hover {
 
     main {
         margin-top: -10vh;
-        height: 47vh;
+        height: 50vh;
     }
 
     footer {
@@ -327,7 +327,7 @@ button:hover {
     #choice-point-display, #result-game-display {
         margin-top: 2.5vh;
         width: 85vw;
-        height: 55vh;
+        height: 53vh;
         margin-left: 7vw;
     }
 
@@ -342,11 +342,11 @@ button:hover {
 
     .point-button {
         font-size: 2vh;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
     }
     .choices-red {
         font-size: 2vh;
-        margin-top: 2vh;
+        margin-top: 1vh;
     }
 
     #continue-to-game, #new-game, #continue {

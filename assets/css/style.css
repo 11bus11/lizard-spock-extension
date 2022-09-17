@@ -185,6 +185,7 @@ button:hover {
 #who-won {
     text-align: center;
     color: #FFFFFF;
+    margin-left: 0%;
 }
 
 #continue, #continue-to-game, #new-game {
@@ -283,7 +284,8 @@ button:hover {
         margin-top: 2vh;
     }
     h2 {
-        font-size: 2.6vh
+        font-size: 2.6vh;
+        margin-top: 2vh;
     }
     h3 {
         font-size: 1.5vh;

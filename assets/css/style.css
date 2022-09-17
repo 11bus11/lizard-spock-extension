@@ -276,7 +276,7 @@ button:hover {
 
     main {
         margin-top: -10vh;
-        height: 60vh;
+        height: 47vh;
     }
 
     footer {
@@ -293,7 +293,7 @@ button:hover {
         font-size: 2.6vh
     }
     h3 {
-        font-size: 1.8vh;
+        font-size: 1.5vh;
     }
     h4 {
         font-size: 2vh;
@@ -319,16 +319,16 @@ button:hover {
     }
     #playing-field {
         margin-top: 0%;
-        width: 80vw;
-        height: 60vh;
-        margin-left: 10vw;
+        width: 85vw;
+        height: 55vh;
+        margin-left: 7vw;
     }
 
     #choice-point-display, #result-game-display {
         margin-top: 2.5vh;
-        width: 80vw;
-        height: 60vh;
-        margin-left: 10vw;
+        width: 85vw;
+        height: 55vh;
+        margin-left: 7vw;
     }
 
     #choice-wrapper {
@@ -351,18 +351,25 @@ button:hover {
 
     #continue-to-game, #new-game, #continue {
         font-size: 2.5vh;
-        margin-top: 4vh;
+        margin-top: 2vh;
     }
 
     @media screen and (min-width: 700px) {
         h1 {
             font-size: 4vh;
         }
+        h3 {
+            font-size: 2.8vh;
+        }
         h4 {
             font-size: 2.1vh;
         }
         li {
             font-size: 2vw;
+        }
+
+        main {
+            height: 55vh;
         }
     }
 }

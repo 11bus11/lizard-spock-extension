@@ -67,13 +67,13 @@ The rules are displayed as long as you are on the game.html page. Depending on w
 ### User stories
 The user was able to:
 - Play an entertaining game
-  - Assuming the user finds a game of rock, paper, sissors, lizard, spock entertaining, they will be entertained by this.
+    - Assuming the user finds a game of rock, paper, sissors, lizard, spock entertaining, they will be entertained by this.
 - Be able to choose how many points are needed to win a round
-  - This is one of the features of the game. You can choose between 3, 5, and 10 points.
+    - This is one of the features of the game. You can choose between 3, 5, and 10 points.
 - See the rules at all times
-  - The rules are always there when you play the game.
+    - The rules are always there when you play the game.
 - See scores and choices each round
- - The game shows how many points each player has and what choice each player made each round. It also shows who got the point.
+    - The game shows how many points each player has and what choice each player made each round. It also shows who got the point.
 
 ### Device testing
 The game has been tested on multiple devices using the mozilla dev tools. These are the devices:

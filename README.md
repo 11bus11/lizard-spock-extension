@@ -1,16 +1,18 @@
 # Rock, paper, sissors, lizard, spock
 This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
 
-    Scissors cuts Paper
-    Paper covers Rock
-    Rock crushes Lizard
-    Lizard poisons Spock
-    Spock smashes Scissors
-    Scissors decapitates Lizard
-    Lizard eats Paper
-    Paper disproves Spock
-    Spock vaporizes Rock
-    Rock crushes Scissors
+- Scissors cuts Paper
+- Paper covers Rock
+- Rock crushes Lizard
+- Lizard poisons Spock
+- Spock smashes Scissors
+- Scissors decapitates Lizard
+- Lizard eats Paper
+- Paper disproves Spock
+- Spock vaporizes Rock
+- Rock crushes Scissors
+    
+![Responsive mockup](assets/media/spock_mockup.PNG)
 
 ## UX - User Experience
 

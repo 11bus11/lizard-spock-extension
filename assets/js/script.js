@@ -68,7 +68,7 @@ function choosePointAmount(chosenElement) {
 //checking if the user chose a point amount
 function checkingPointChoice() {
     if (pointChoice == 0) {
-        window.alert("No option chosen.")
+        window.alert("No option chosen.");
     }
 }
 
@@ -150,7 +150,7 @@ function zIndexChange(gameInput) {
             break;
         case toGame:
             if (pointChoice == 0) {
-                window.alert("No option chosen.")
+                window.alert("No option chosen.");
             } else {
                 choicePointWindow.style.zIndex = -3;
             }

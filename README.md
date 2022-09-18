@@ -103,10 +103,21 @@ The game was tested on these browsers:
 I asked some people I know to test the game. They found some small issues with the media querries, but did not find much wrong with the game itself.
 One of the people I asked said that they liked the retro style of the game. Another person said it would be nice to get some feedback on how many points are chosen. This was later inplemented.
 
+### Game logic testing
+I tested the game logic multiple times. The part where your choice and the computers choice are compared was tested the most. Each possible combination was tested to make sure the result was correct. Every other part of the game was tested in a similar fashion.
+
 ### Validator testing
-
-
 #### Code
+- Put the JavaScript through the jshint validator. It came up with some warnings. I had forgotten some semi-colons and had added some in places it was not needed. This is now fixed. No errors left.
+- The CSS was validated in the official Jigsaw validator. No problems were found.
+![CSS validation](assests/media/spock_css_validation.PNG)
+- The HTML was tested in the w3c validator. No problems were found.
+![HTML validation](assets/media/spock_HTMLgame_validation.PNG)
+![HTML validation](assets/media/spock_HTMLindex_validation.PNG)
+
+#### Lighthouse
+This was the lighthouse results:
+![Lighthouse](assets/media/spock_lighthouse.PNG)
 
 #### Contrast and more
 I checked all colours in the [accessibility checker](https://www.accessibilitychecker.org/color-contrast-checker/). Their colour contrast checker tells you if the background and forground (the text) has a large enough contrast. If it does not have enough contrast, it will be very hard for people with bad eyesight to read.
@@ -121,10 +132,12 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 
 ### Fixed bugs
 - Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so i chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
+- After i had made that change, the point-choice would not reset when a new game was to be played. I had accidentally removed the lines of code that reset it. I rewrote the code, and now it works again.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
 ![Bug rules]
 
 ### Unfixed bugs
+No unfixed bugs.
 
 ### Deployment
 This game was deployed to github pages.
@@ -138,6 +151,7 @@ This game was deployed to github pages.
 - Copy the link to your deployed website (can be found in the github pages settings, where you chose which branch to build from) and make sure it is operating as expected.
 - The deployed website will now be updated when you push anything new to the repository.
 
+[Live site](https://11bus11.github.io/lizard-spock-extention/)
 
 ### Credits
 The rules for the game are copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), and the font (Orbitron, san serif) is from [Google fonts](https://fonts.google.com/specimen/Orbitron?query=orbitron). The layout is inspired by Star Trek TOS by Gene Roddenberry. 

@@ -12,8 +12,6 @@ This game is an extention to the classic Rock, paper, scssors game. This extenti
     Spock vaporizes Rock
     Rock crushes Scissors
 
-
-
 ## UX - User Experience
 
 ### User stories
@@ -45,18 +43,26 @@ The game is simple with one starting page and one game page with 3 windows. One 
 
 ### Starting/instruction page
 This page was made to give the user instructions on how to play the game. In some games, especially older ones, you are not given all instructions on how to play the game. It is a lot of trial and error. Even if i want to give this game a retro feel, this is one of the things i dont want to replicate. An instruction page also keeps the user from getting frustrated and/or annoyed.
+![starting page](assets/media/start_comp.PNG)
 
 ### Point choosing window
 I have chosen to have this game work like when kids play rock, paper, sissors. You play until on of you gets 3 points. But instead of just making the user play to 3, they can choose to play to 3, 5 and 10. This is chosen on this window. If non of the options gets chosen, an alert, telling you to choose an option, pops up when you click the blue button.
+![point choice](assets/media/point_choice_comp.PNG)
 
 ### Game window
 When the user has chosen the points needed to win, they play the game itself. This is done on this window. When you choose aone of the options you get to know who won the round and the winner gets one point. Then you click continue to play another round. this continues until you or the computer have enough points to win. When that happens the continue button sends you to the result window.
+![Game window](assets/media/game_comp.PNG)
 
 ### Result window
 This window shows who won and also gives the user the option to start a new game.
+![result game](assets/media/result_game_comp.PNG
 
 ### Rules
 The rules are displayed as long as you are on the game.html page. Depending on which device you are on the placement might be a bit different, but the rules are always accessible. This is to avoid confusion, since this game is from a tv-show that not everyone has seen. By always showing the rules I can avoid the user getting confused about why for example spock wins against rock. The information is right there and the user can understand the logic. 
+
+### Choice feedback
+When you make a choice you get instant feedback showing your choice and the computers choice. It also shows who won the round. There is also feedback choing what amount of point you have clicked on (point-choice window).
+![feedback](assets/media/choice_show.PNG)
 
 ### Features left to implement
 - I would like to add some more choices that the user can make.
@@ -110,7 +116,7 @@ I tested the game logic multiple times. The part where your choice and the compu
 #### Code
 - Put the JavaScript through the jshint validator. It came up with some warnings. I had forgotten some semi-colons and had added some in places it was not needed. This is now fixed. No errors left.
 - The CSS was validated in the official Jigsaw validator. No problems were found.
-![CSS validation](assests/media/spock_css_validation.PNG)
+![CSS validation](assets/media/spock_css_validation.PNG)
 - The HTML was tested in the w3c validator. No problems were found.
 ![HTML validation](assets/media/spock_HTMLgame_validation.PNG)
 ![HTML validation](assets/media/spock_HTMLindex_validation.PNG)
@@ -131,13 +137,13 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 ![red button validation](assets/media/red_contrast.PNG)
 
 ### Fixed bugs
-- Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so i chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
+- Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so I chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
 - After i had made that change, the point-choice would not reset when a new game was to be played. I had accidentally removed the lines of code that reset it. I rewrote the code, and now it works again.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
 ![Bug rules]
 
 ### Unfixed bugs
-No unfixed bugs.
+I can not get the buttos centered. This will be solved when I have figured out what the problem is. Until then, I have done the best i can to make it look good.
 
 ### Deployment
 This game was deployed to github pages.
@@ -154,4 +160,6 @@ This game was deployed to github pages.
 [Live site](https://11bus11.github.io/lizard-spock-extention/)
 
 ### Credits
-The rules for the game are copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), and the font (Orbitron, san serif) is from [Google fonts](https://fonts.google.com/specimen/Orbitron?query=orbitron). The layout is inspired by Star Trek TOS by Gene Roddenberry. 
+The rules for the game are copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock), and the font (Orbitron, san serif) is from [Google fonts](https://fonts.google.com/specimen/Orbitron?query=orbitron). The layout is inspired by Star Trek TOS by Gene Roddenberry. I used [W3-schools](https://www.w3schools.com/js) to find information about JavaScript syntax and other JavaScript related information.
+
+I used 

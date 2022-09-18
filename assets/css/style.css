@@ -119,7 +119,7 @@ a {
     border-style: solid;
     z-index: 1;
 }
-#choice-point-display {
+#choice-point-window {
     position: fixed;
     z-index: 3;
     background-color: #000000;
@@ -132,7 +132,7 @@ a {
     border-width: 5px;
     border-color: #add8e6;
 }
-#result-game-display {
+#result-game-window {
     position: fixed;
     z-index: -3;
     background-color: #000000;
@@ -218,6 +218,7 @@ button:hover {
 }
 #who-won-game {
     font-size: 5vh;
+    text-align: center;
 }
 #creator {
     margin-top: 7vh;
@@ -295,7 +296,7 @@ button:hover {
         margin-left: 7vw;
     }
 
-    #choice-point-display, #result-game-display {
+    #choice-point-window, #result-game-window {
         margin-top: 2.5vh;
         width: 85vw;
         height: 53vh;

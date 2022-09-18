@@ -40,10 +40,11 @@ let youPoints = 0;
 let compPointsElement = document.getElementById("comp-point");
 let youPointsElement = document.getElementById("you-point");
 let roundAnouncement = document.getElementById("who-won");
-let resultGameDisplay = document.getElementById("result-game-display");
-let choicePointDisplay = document.getElementById("choice-point-display");
+let resultGameWindow = document.getElementById("result-game-window");
+let choicePointWindow = document.getElementById("choice-point-window");
 let resultGame = document.getElementById("who-won-game");
 let feedbackPointChoice = document.getElementById("feedback-point-choice");
+let choiceDisplay = document.getElementById("choice-display");
 let compChoice = "scissors";
 var statusGame = 0;
 
@@ -57,7 +58,6 @@ const youWin = "you win";
 //choosing points needed to win
 function choosePointAmount(chosenElement) {
     pointChoice = chosenElement;
-    console.log(pointChoice);
     feedbackPointChoice.innerHTML = `Points chosen: ${pointChoice}`;
     compPoints = 0;
     youPoints = 0;
@@ -94,14 +94,13 @@ function isWinner(youChoice) {
             compPoints = compPoints + 1;
             break;
     }
-    console.log(compChoice.name, youChoice.beats1, youChoice.beats2);
 }
 
 //goes thru a round and changes point amounts
 function playGame(clicked) {
     if (statusGame == 0) {
         compChoiceRandom();
-        document.getElementById("choice-display").innerHTML = `YOU (${clicked.name}) vs. COMPUTER (${choiceObjects[randomNumber].name})`;
+        choiceDisplay.innerHTML = `YOU (${clicked.name}) vs. COMPUTER (${choiceObjects[randomNumber].name})`;
         if (choiceObjects[randomNumber] == clicked) {
             roundAnouncement.innerHTML = "TIED";
         } else {
@@ -117,24 +116,18 @@ function playGame(clicked) {
 
 //determines if the game is done (won/lost) or will continue
 function endRound() {
-    console.log(pointChoice);
-    console.log(youPoints);
-    console.log(compPoints);
     switch (pointChoice) {
         case youPoints:
-            console.log("done,you");
             zIndexChange(youWin);
             break;
         case compPoints:
-            console.log("done,comp");
             zIndexChange(computerWin);
             break;
         default:
-            console.log ("continue");
             break;
     }
     roundAnouncement.innerHTML = "RESULT";
-    document.getElementById("choice-display").innerHTML = `YOU vs. COMPUTER`;
+    choiceDisplay.innerHTML = `YOU vs. COMPUTER`;
     statusGame = 0;
 }
 
@@ -142,24 +135,25 @@ function endRound() {
 function zIndexChange(gameInput) {
     switch (gameInput) {
         case computerWin:
-            resultGameDisplay.style.zIndex = 3;
+            resultGameWindow.style.zIndex = 3;
             resultGame.innerHTML = "You lost!";
             break;
         case youWin:
-            resultGameDisplay.style.zIndex = 3;
+            resultGameWindow.style.zIndex = 3;
             resultGame.innerHTML = "You won!";
             break;
         case newGame:
-            resultGameDisplay.style.zIndex = -3;
-            choicePointDisplay.style.zIndex = 3;
+            pointChoice = 0;
+            feedbackPointChoice.innerHTML = `Points chosen: ${pointChoice}`;
+            resultGameWindow.style.zIndex = -3;
+            choicePointWindow.style.zIndex = 3;
             break;
         case toGame:
             if (pointChoice == 0) {
                 window.alert("No option chosen.")
             } else {
-                choicePointDisplay.style.zIndex = -3;
+                choicePointWindow.style.zIndex = -3;
             }
-            
             break;
     }
 }

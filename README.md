@@ -1,5 +1,6 @@
 # Rock, paper, sissors, lizard, spock
 [Live site](https://11bus11.github.io/lizard-spock-extention/)
+
 This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
 
 - Scissors cuts Paper
@@ -144,7 +145,7 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 - Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so I chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
 - After i had made that change, the point-choice would not reset when a new game was to be played. I had accidentally removed the lines of code that reset it. I rewrote the code, and now it works again.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
-![Bug rules]/assets/media/bug_rules.jgp)
+![Rules bug]/assets/media/rules_bug.JPG)
 
 ### Unfixed bugs
 I can not get the buttos centered. This will be solved when I have figured out what the problem is. Until then, I have done the best i can to make it look good.

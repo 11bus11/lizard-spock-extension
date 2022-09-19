@@ -145,7 +145,7 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 - Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so I chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
 - After i had made that change, the point-choice would not reset when a new game was to be played. I had accidentally removed the lines of code that reset it. I rewrote the code, and now it works again.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
-![Rules bug]/assets/media/rules_bug.JPG)
+![Rules bug](assets/media/rules_bug.JPG)
 
 ### Unfixed bugs
 I can not get the buttos centered. This will be solved when I have figured out what the problem is. Until then, I have done the best i can to make it look good.

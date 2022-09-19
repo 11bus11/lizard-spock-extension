@@ -229,6 +229,10 @@ button:hover {
     margin-top: 7vh;
     text-align: center;
 }
+#rules {
+    font-size: 2.8vh;
+    text-align: left;
+}
 
 /*CSS for both mobile and ipad*/
 @media screen and (max-width: 1000px) {
@@ -334,6 +338,11 @@ button:hover {
     #point-count {
         margin-top: 1vh;
     }
+    #rules {
+        font-size: 2vh;
+        margin-bottom: 0%;
+        margin-left: 5vw;
+    }
 
     /*CSS for maikng it look good on ipad*/
     @media screen and (min-width: 700px) {
@@ -357,6 +366,9 @@ button:hover {
         }
         #play-game {
             margin-left: 44%;
+        }
+        #rules {
+            font-size: 2.1vh;
         }
     }
 }

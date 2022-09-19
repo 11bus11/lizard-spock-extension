@@ -108,7 +108,7 @@ function playGame(clicked) {
         }
         statusGame = 1;
     } else {
-        window.alert("already chosen");
+        window.alert("You have already chosen.");
     }
     compPointsElement.innerHTML = `Computer points: ${compPoints}`;
     youPointsElement.innerHTML = `Your points: ${youPoints}`;

@@ -1,4 +1,5 @@
 # Rock, paper, sissors, lizard, spock
+[Live site](https://11bus11.github.io/lizard-spock-extention/)
 This game is an extention to the classic Rock, paper, scssors game. This extention is used in the tv-show The Big Bang Theory. The additions in this version are "lizard" and "spock" (from Star Trek The Original Series). The rules copied from [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) are:
 
 - Scissors cuts Paper
@@ -33,6 +34,7 @@ I wanted the game to look a bit like an older game, and be inspired by Star Trek
 
 #### Structure
 For the layout of the page i chose to create a game window with a border around it. This is how a lot of remakes of older games looks. The window is also shaped with round corners, just like the screens in Star Trek. I chose to have the rules accessable at all times due to this version/extention of the classic "Rock, paper, sissors" game. The only ones who really knows how it works are viewers of The Big Bang Theory. In order to avoid confusion about the result I chose to have the rules easily accessable at all times. On desktop, they are placed to the right of the game window, and on mobile and smaller screens, they are placed below the game window. The starting page was inspired by the starting pages of old 8-, and 16-bit games.
+
 ![Inspiration picture game window](assets/media/inspo_image.jpg)
 ![Inspiration picture information page - galaga](assets/media/galaga_starting_page.png)
 ![Inspiration picture information page - mario](assets/media/mario_starting_page.jpg)
@@ -57,7 +59,7 @@ When the user has chosen the points needed to win, they play the game itself. Th
 
 ### Result window
 This window shows who won and also gives the user the option to start a new game.
-![result game](assets/media/result_game_comp.PNG
+![result game](assets/media/result_game_comp.PNG)
 
 ### Rules
 The rules are displayed as long as you are on the game.html page. Depending on which device you are on the placement might be a bit different, but the rules are always accessible. This is to avoid confusion, since this game is from a tv-show that not everyone has seen. By always showing the rules I can avoid the user getting confused about why for example spock wins against rock. The information is right there and the user can understand the logic. 
@@ -142,7 +144,7 @@ I checked all colours in the [accessibility checker](https://www.accessibilitych
 - Before I made it so that the user had to choose a point amount, I had 3 points as default. This did not work 100% of the time, so I chose between either redoing that feature or making it obligatory to choose an option. I chose the later.
 - After i had made that change, the point-choice would not reset when a new game was to be played. I had accidentally removed the lines of code that reset it. I rewrote the code, and now it works again.
 - I had a problem where all rules wouldnt show up propperly on mobile. I solved this by changing the size of the game window in order to make more space for the rules. 
-![Bug rules]
+![Bug rules]/assets/media/bug_rules.jgp)
 
 ### Unfixed bugs
 I can not get the buttos centered. This will be solved when I have figured out what the problem is. Until then, I have done the best i can to make it look good.
@@ -158,6 +160,13 @@ This game was deployed to github pages.
 - Choose to create a local clone (the first time you open your repository in github desktop, there should be a window asking if you want to create a clone)
 - Copy the link to your deployed website (can be found in the github pages settings, where you chose which branch to build from) and make sure it is operating as expected.
 - The deployed website will now be updated when you push anything new to the repository.
+
+#### Forking and cloning
+- Forking is creating a new repository with the same content as the one you forked. 
+    - This is done by going to the repository you want to clone, and clicking the "fork" icon in the top right corner.
+- Cloning is used for making local copies of your code.
+    - Cloning a repository with github desktop is easily done by clicking the green "code" button and choosing the "open in github desktop" option. If you dont have a clone already, github desktop will ask if you want to create a local clone. Click yes.
+    - If you do it with git you have to write "git clone" and then specify what you want to clone.
 
 [Live site](https://11bus11.github.io/lizard-spock-extention/)
 
